@@ -29,6 +29,8 @@ For this project you will create a gallery page to share pictures of things that
 
 To practice passing values through `props` in React, you will build the gallery using mulitple components - an `App`, `GalleryList`, and `GalleryItem`.
 
+[X] [X] Added a folder and file for the two components introduced above.
+
 - `App` - represents the overall application or site 
 - `GalleryList` - represents the gallery of images. By componentizing, we could reuse this component in different applications
 - `GalleryItem` - represents a single image in the gallery with the ability to click the image to toggle between image and description as well as the ability to like an image.
@@ -76,3 +78,14 @@ For each `feature` of your application, make a branch, work on the branch, and t
 - Use [multer](https://github.com/expressjs/multer) for image upload 
 
 > NOTE: The above stretch goals are intended to be completed in order.
+
+
+
+### Personal Notes
+
+- GalleryList
+    - Represents the list of images
+- GalleryItem
+    - Represents a single image
+    - Ability to click the image to toggle between the image and the description 
+    - Also the ability to like the image

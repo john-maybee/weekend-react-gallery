@@ -11,3 +11,12 @@ img {
   width: 195px;
   padding: 10px;
 }
+
+h3 {
+  text-decoration: underline overline;
+}
+
+h1 {
+  text-decoration: overline;
+
+}

@@ -6,7 +6,7 @@ import './App.css';
 
 function App() {
 
-  const [galleryItems, setGalleryItems] = useState([]);
+  const [galleryItems, setGalleryItems] = useState([]); // get and set the gallery items in the blank array.
 
   const fetchData = () => {
     axios({
@@ -20,11 +20,11 @@ function App() {
     .catch(function (error) {
       console.log('Error on GET: ', error);
     });
-  }
+  } // use axios to get the gallery from the server
 
   useEffect( () => {
     fetchData();
-  }, [])
+  }, []); // using useEffect from react to fetch the Data
 
   return (
     <div className="App">
@@ -34,6 +34,6 @@ function App() {
       <GalleryList galleryListProp={galleryItems} fetchData={fetchData}/>
     </div>
   );
-}
+} // return items to the DOM 
 
 export default App;

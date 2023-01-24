@@ -17,6 +17,7 @@ function GalleryList({galleryListProp, fetchData}) {
             
         </>
     )
-}
+} // this GalleryList function takes in props from the App.jsx and utilizes it to map the data sent over from the server. 
+// Also plugs GalleryItem into the DOM and creates props/hooks for the GalleryItem component to take in and use.
 
 export default GalleryList;

@@ -5,10 +5,16 @@ function GalleryList({galleryListProp}) {
         <>
             {galleryListProp.map(object => 
                 (
-                    <GalleryItem 
-                        object={object}
-                    />
+                    <div className="objectItem" key={object.id}>
+                        <GalleryItem 
+                            object={object}
+                        />
+                        <br />
+                        <button>love it!</button>
+                        <p>{object.likes}</p>
+                    </div>
                 )
+                
             )}
             
         </>

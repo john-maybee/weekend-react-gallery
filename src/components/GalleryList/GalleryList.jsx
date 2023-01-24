@@ -1,6 +1,6 @@
 import GalleryItem from '../GalleryItem/GalleryItem';
 
-function GalleryList({galleryListProp}) {
+function GalleryList({galleryListProp, fetchData}) {
     return (
         <>
             {galleryListProp.map(object => 
@@ -8,10 +8,8 @@ function GalleryList({galleryListProp}) {
                     <div className="objectItem" key={object.id}>
                         <GalleryItem 
                             object={object}
-                        />
-                        <br />
-                        <button>love it!</button>
-                        <p>{object.likes}</p>
+                            fetchData={fetchData}
+                        />                   
                     </div>
                 )
                 

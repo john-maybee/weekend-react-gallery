@@ -1,8 +1,25 @@
 import { useState } from 'react';
+import axios from 'axios';
 
-function GalleryItem({object}){
-    
+
+function GalleryItem({fetchData, object}){
+    // const [counter, setCounter] = useState(object.likes);
+
     let [isClicked, setIsClicked] = useState(true);
+
+    const incrementLike = () => {
+        axios({
+            method: 'PUT',
+            url: `/gallery/like/${object.id}`
+        })
+        .then(response => {
+            alert(`you liked ${object.title} image!`);
+            fetchData();
+        })
+        .catch(error => {
+            console.log(error);
+        })
+    }
 
     const toggleImg = () => {
         console.log('clicked a picture');
@@ -21,10 +38,9 @@ function GalleryItem({object}){
                 <div>
                     {isClicked ? <img onClick={toggleImg} src={object.path}/> : <p className="description" onClick={toggleDescription}>{object.description} <br />(click here to see the picture)</p>}
                 </div>
-                {/* <img src={object.path}/> */}
-                {/* <p>{object.description}</p> */}
-                {/* {imgDescriptionSwap} */}
-            
+                <br />
+                <button className="likes" onClick={incrementLike}>love it!</button>
+                <p>{object.likes} in love!</p>
             </div>
         </>
     )

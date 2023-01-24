@@ -19,7 +19,7 @@ function GalleryItem({object}){
             <div className="object" key={object.id}>
                 <h3>{object.title}</h3>
                 <div>
-                {isClicked ? <img onClick={toggleImg} src={object.path}/> : <p onClick={toggleDescription}>{object.description}</p>}
+                    {isClicked ? <img onClick={toggleImg} src={object.path}/> : <p className="description" onClick={toggleDescription}>{object.description} <br />(click here to see the picture)</p>}
                 </div>
                 {/* <img src={object.path}/> */}
                 {/* <p>{object.description}</p> */}

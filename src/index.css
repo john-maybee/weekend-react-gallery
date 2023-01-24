@@ -25,3 +25,9 @@ h1 {
   display: inline-block;
   width: 30%;
 }
+
+.description {
+ height: 260px;
+ padding: 10px;
+ justify-self: center;
+}

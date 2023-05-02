@@ -1,9 +1,12 @@
 # Project Name
 
-[Project Instructions](./INSTRUCTIONS.md), this line may be removed once you have updated the README.md
+[Project Instructions](./INSTRUCTIONS.md)
 
-## Description
+## Weekend React Gallery Image
+![React Gallery Home Page](images/reactgallery.png)
 
-Your project description goes here. What problem did you solve? How did you solve it?
+## Weekend React Gallery Image Clicked Image
+![React Gallery Clicked Image Page](images/reactgalleryclicked.png)
 
-Additional README details can be found [here](https://github.com/PrimeAcademy/readme-template/blob/master/README.md).
+## Weekend React Gallery Image Loved Warning Image
+![React Gallery Loved Alert](images/reactgallerywarning.png)
